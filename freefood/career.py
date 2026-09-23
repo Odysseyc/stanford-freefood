@@ -22,6 +22,7 @@ import json
 import logging
 import os
 import re
+import time
 from dataclasses import dataclass
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -44,6 +45,12 @@ MANUAL_PATH = os.getenv("FF_MANUAL_EVENTS", "manual_events.json")
 # Bump the version to force every career event to be re-classified (e.g. after
 # editing SYSTEM below). Cached verdicts under the old version are ignored.
 CACHE_NS = "career:v1:"
+# The first run has ~175 uncached events. Firing them all back-to-back trips
+# low-tier API rate limits, so cap new calls per run and pace them. Anything
+# over the cap is simply classified on the next run (verdicts are cached), so
+# the backlog clears within a few runs and steady-state runs need ~no calls.
+MAX_NEW_CALLS = int(os.getenv("CAREER_MAX_NEW_CALLS", "60"))
+CALL_DELAY = float(os.getenv("CAREER_CALL_DELAY", "1.2"))
 
 # Recall filter. Deliberately loose; the model does the precision work.
 PREFILTER = re.compile(
@@ -160,7 +167,7 @@ def classify(events: list[RawEvent], store: Store, client_factory,
     client = None
     today = dt.date.today()
     kept: list[CareerEvent] = []
-    hits = misses = failures = 0
+    hits = misses = failures = deferred = 0
 
     for ev in candidates:
         key = CACHE_NS + ev.content_hash
@@ -172,8 +179,14 @@ def classify(events: list[RawEvent], store: Store, client_factory,
             if dry_run:
                 log.info("[dry-run] would classify (career): %s", ev.title[:70])
                 continue
+            if misses + failures >= MAX_NEW_CALLS:
+                deferred += 1
+                continue
             if client is None:
-                client = client_factory()
+                # Extra retries: the SDK backs off on 429s using retry-after.
+                client = client_factory().with_options(max_retries=6)
+            elif CALL_DELAY:
+                time.sleep(CALL_DELAY)
             try:
                 resp = client.messages.parse(
                     model=config.MODEL,
@@ -200,11 +213,13 @@ def classify(events: list[RawEvent], store: Store, client_factory,
                                     verdict.audience.strip(), verdict.blurb,
                                     verdict.confidence))
 
-    log.info("career classifier: %d kept (%d cached, %d new calls, %d failed)",
-             len(kept), hits, misses, failures)
-    if failures and failures >= max(1, len(candidates) // 2):
+    log.info("career classifier: %d kept (%d cached, %d new calls, %d failed, "
+             "%d deferred to next run)", len(kept), hits, misses, failures, deferred)
+    attempted = misses + failures
+    if failures and failures >= max(1, attempted // 2):
         raise ClassifierUnavailable(
-            f"{failures} of {len(candidates)} career classification calls failed"
+            f"{failures} of {attempted} career classification calls failed "
+            "(check the API key's credits and rate limits)"
         )
     return kept
 

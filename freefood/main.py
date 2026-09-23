@@ -106,7 +106,14 @@ def main(argv=None) -> int:
             scraped = career.classify(raw, store, _make_client, dry_run=args.dry_run)
             career_events = career.merge(scraped, manual_career)
         except ClassifierUnavailable as exc:
-            log.error("%s -- leaving the existing career feed untouched", exc)
+            from pathlib import Path
+            if (Path(args.out or config.OUT_DIR) / "career.ics").exists():
+                log.error("%s -- leaving the existing career feed untouched", exc)
+            else:
+                # No feed yet: publish manual events alone, so the subscribed
+                # URL resolves instead of 404ing while the key gets sorted out.
+                log.error("%s -- publishing manual events only for now", exc)
+                career_events = manual_career
 
     print(f"\n{'=' * 72}")
     print(f"scraped {len(raw)} events -> {len(found)} with free food")
