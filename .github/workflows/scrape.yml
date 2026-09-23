@@ -1,0 +1,150 @@
+name: scrape
+
+on:
+  schedule:
+    # Every 3 hours. GitHub's cron is best-effort and routinely runs 5-30
+    # minutes late; that's fine here, since the per-event alarms are what
+    # actually get you to the food, not feed freshness.
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      # Snapshot the feed before it gets overwritten. Every run rewrites
+      # DTSTAMP on every event, so the file always differs -- only a UID-set
+      # diff can tell "two new events" apart from "nothing happened".
+      - name: Snapshot current feed
+        run: cp docs/feed.ics "$RUNNER_TEMP/feed.before.ics" || true
+
+      - name: Scrape and build feed
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Only needed for identity-linked API keys, which reject every
+          # request without it. Harmless when unset.
+          ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
+        run: python -m freefood.main
+
+      # Committing state/ does double duty: it persists the classifier cache
+      # between runs (so unchanged events never cost a second model call), and
+      # the commit itself counts as repo activity -- which stops GitHub from
+      # auto-disabling this scheduled workflow after 60 days of inactivity.
+      - name: Persist cache and feed
+        id: persist
+        run: |
+          git config user.name  "freefood-bot"
+          git config user.email "freefood-bot@users.noreply.github.com"
+          git add state/ docs/feed.ics docs/events.json
+          if git diff --staged --quiet; then
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "feed: $(date -u +%Y-%m-%dT%H:%MZ)"
+            echo "committed=true" >> "$GITHUB_OUTPUT"
+          fi
+          git push
+          echo "sha=$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+
+      # Phone push on every run, including the quiet ones -- eight a day, of
+      # which roughly none carry a new event out of term. That is deliberate:
+      # a heartbeat you can see is worth more than an inbox you can ignore.
+      #
+      # The two cases carry different ntfy priorities. Real events go out at
+      # default priority so the phone actually buzzes; the "nothing new"
+      # heartbeat goes at low, which lands silently in the tray and won't
+      # wake you for the 03:00 and 06:00 runs. Bump `prio` to default below
+      # if you want every run to buzz.
+      #
+      # NTFY_TOPIC is a secret, not a var: ntfy has no accounts, so the topic
+      # name IS the credential. Anyone who learns it can read your feed
+      # notifications and publish to them.
+      - name: Notify
+        if: success()
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          COMMITTED: ${{ steps.persist.outputs.committed }}
+          SHA: ${{ steps.persist.outputs.sha }}
+        run: |
+          if [ -z "$NTFY_TOPIC" ]; then
+            echo "NTFY_TOPIC not set -- skipping notification"
+            exit 0
+          fi
+          body=$(python -m freefood.notify "$RUNNER_TEMP/feed.before.ics" docs/feed.ics)
+          total=$(grep -c '^BEGIN:VEVENT' docs/feed.ics || true)
+          if [ -n "$body" ]; then
+            title="New free food on campus"
+            tags="hamburger"
+            prio="default"
+            msg="$body"
+          elif [ "$COMMITTED" = "true" ]; then
+            title="Ran OK - no new events"
+            tags="white_check_mark"
+            prio="low"
+            msg="Committed $SHA successfully, but no new events. $total in the feed."
+          else
+            title="Ran OK - nothing to commit"
+            tags="white_check_mark"
+            prio="low"
+            msg="Scrape succeeded, feed unchanged. $total events in the feed."
+          fi
+          echo "notifying: $title / $msg"
+          curl -sS --fail-with-body \
+            -H "Title: $title" \
+            -H "Tags: $tags" \
+            -H "Priority: $prio" \
+            -H "Click: https://stanfordfatass-wq.github.io/stanford-freefood/" \
+            -d "$msg" \
+            "https://ntfy.sh/$NTFY_TOPIC"
+
+      # A heartbeat that only fires on success is a trap: a broken scraper
+      # would just go quiet, and silence is exactly what a healthy out-of-term
+      # run looks like. So failures get their own push, at high priority.
+      - name: Notify on failure
+        if: failure()
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          [ -n "$NTFY_TOPIC" ] || exit 0
+          curl -sS --fail-with-body \
+            -H "Title: Free food scraper FAILED" \
+            -H "Tags: rotating_light" \
+            -H "Priority: high" \
+            -H "Click: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" \
+            -d "Run $GITHUB_RUN_ID failed. The feed is stale until this is fixed." \
+            "https://ntfy.sh/$NTFY_TOPIC"
+
+      # --- Deploy ------------------------------------------------------
+      # Nothing to do here. docs/feed.ics is committed by the step above and
+      # GitHub Pages serves it straight from the branch: no deploy action, no
+      # second account, no extra secrets.
+      #
+      # Tradeoff: GitHub's CDN sets Cache-Control: max-age=600, so the feed can
+      # be up to 10 minutes stale. That is moot here -- the 45-minute per-event
+      # alarm is what gets you to the food, not feed freshness.
+      #
+      # Pages on a PRIVATE repo needs a paid plan. To stay private, use
+      # Cloudflare Pages instead (free, works with private repos) by restoring:
+      #
+      #   - name: Deploy to Cloudflare Pages
+      #     uses: cloudflare/wrangler-action@v3
+      #     with:
+      #       apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      #       accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      #       command: pages deploy docs --project-name=stanford-freefood

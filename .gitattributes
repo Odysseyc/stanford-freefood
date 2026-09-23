@@ -1,0 +1,7 @@
+# Force LF on anything that gets executed by a shell. Git for Windows would
+# otherwise check these out with CRLF, which breaks shebangs and heredocs.
+*.sh   text eol=lf
+*.yml  text eol=lf
+*.py   text eol=lf
+*.ics  text eol=lf
+*.db   binary
