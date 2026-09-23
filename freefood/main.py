@@ -5,8 +5,8 @@ import logging
 import os
 import sys
 
-from . import config, icsfeed, webdata
-from .classify import ClassifierUnavailable, classify
+from . import career, config, icsfeed, webdata
+from .classify import ClassifierUnavailable, _make_client, classify
 from .models import RawEvent
 from .sources import cardinalengage, localist
 from .store import Store
@@ -46,6 +46,8 @@ def main(argv=None) -> int:
     ap.add_argument("--no-groups", action="store_true",
                     help="Skip the ~400-request Localist per-group pass.")
     ap.add_argument("--no-campusgroups", action="store_true")
+    ap.add_argument("--no-career", action="store_true",
+                    help="Skip the career/recruiting calendar.")
     ap.add_argument("--out", default=None)
     ap.add_argument("-v", "--verbose", action="store_true")
     args = ap.parse_args(argv)
@@ -92,6 +94,20 @@ def main(argv=None) -> int:
         log.error("leaving the existing feed untouched")
         return 3
 
+    manual_food, manual_career = career.load_manual()
+    found += [m for m in manual_food
+              if m.raw.dedupe_key not in {f.raw.dedupe_key for f in found}]
+
+    # Career feed. A failure here must never block the food feed, so it is
+    # handled separately: on failure the old career.ics is simply left alone.
+    career_events = None
+    if not args.no_career:
+        try:
+            scraped = career.classify(raw, store, _make_client, dry_run=args.dry_run)
+            career_events = career.merge(scraped, manual_career)
+        except ClassifierUnavailable as exc:
+            log.error("%s -- leaving the existing career feed untouched", exc)
+
     print(f"\n{'=' * 72}")
     print(f"scraped {len(raw)} events -> {len(found)} with free food")
     print("=" * 72)
@@ -101,12 +117,23 @@ def main(argv=None) -> int:
               f"{(fe.raw.location or '-')[:28]}")
     print()
 
+    if career_events is not None:
+        print(f"{len(career_events)} career / recruiting events")
+        print("=" * 72)
+        for ce in sorted(career_events, key=lambda e: e.raw.start):
+            when = ce.raw.start.strftime("%a %d %b %H:%M")
+            print(f"{when}  {ce.category:<13.13}  {(ce.company or '-'):<12.12}  "
+                  f"{ce.raw.title[:46]}")
+        print()
+
     if args.dry_run:
         log.info("dry run: not writing feed")
         return 0
 
     icsfeed.write(found, args.out)
     webdata.write(found, args.out)
+    if career_events is not None:
+        career.write(career_events, args.out)
     return 0
 
 

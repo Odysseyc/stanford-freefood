@@ -1,0 +1,26 @@
+[
+  {
+    "calendar": "career",
+    "category": "Recruiting",
+    "title": "Tesla on campus: talk, networking & recruiting",
+    "company": "Tesla",
+    "start": "2026-10-05T17:00",
+    "end": "2026-10-05T20:00",
+    "location": "",
+    "url": "",
+    "notes": "Tesla talk plus networking and recruiting. Check Handshake for the room and RSVP, and bring resumes."
+  },
+  {
+    "_": "EXAMPLE - titles starting with _ are ignored. Copy this block to add your own event.",
+    "title": "_Example: Boba study break with club merch",
+    "calendar": "both",
+    "category": "Networking",
+    "company": "",
+    "start": "2026-10-10T15:00",
+    "end": "2026-10-10T16:30",
+    "location": "Old Union Courtyard",
+    "url": "https://example.com/event-page",
+    "food": "boba",
+    "notes": "Where I heard about it: club WhatsApp. calendar can be career, food, or both."
+  }
+]

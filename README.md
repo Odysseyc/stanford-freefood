@@ -106,3 +106,32 @@ dinners, "food for thought", and talks about food.
 - **Scheduled workflow expiry.** GitHub disables cron workflows after 60 days
   of repo inactivity. The run commits `state/`, which counts as activity, so
   this stays alive on its own.
+
+## Career & recruiting calendar
+
+The same run also builds a second feed, `docs/career.ics`, of recruiting
+events, info sessions, career fairs, networking mixers, career workshops,
+industry/founder talks, fellowship info sessions, and hackathons/pitch
+competitions. Subscribe to it separately:
+
+    https://<your-username>.github.io/stanford-freefood/career.ics
+
+It reuses the scraped events (no extra scraping) with its own separately
+cached classifier. Tune it with `CAREER_MIN_CONFIDENCE` (default `0.6`) and
+`CAREER_ALARM_MINUTES` (default `60`); `--no-career` skips it. A career
+classifier failure leaves the old `career.ics` in place and never blocks the
+food feed.
+
+**Coverage gap:** most employer events live on Handshake, which needs a
+Stanford login and has no public feed. Those only appear here if they're
+cross-posted to events.stanford.edu or CardinalEngage. For the rest, use
+Handshake's own export (Settings -> Calendar export link, covers events you've
+RSVP'd to) and/or `manual_events.json`.
+
+## Manual events
+
+`manual_events.json` holds events no scraper can see -- Handshake, group
+chats, flyers, emails. Each entry needs `title` and `start`
+(`YYYY-MM-DDTHH:MM`, Pacific time); `calendar` is `career`, `food`, or `both`.
+Titles starting with `_` are ignored, and past events drop off on their own.
+Edit the file on GitHub, commit, and the next run picks it up.

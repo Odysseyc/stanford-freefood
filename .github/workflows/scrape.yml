@@ -52,7 +52,7 @@ jobs:
         run: |
           git config user.name  "freefood-bot"
           git config user.email "freefood-bot@users.noreply.github.com"
-          git add state/ docs/feed.ics docs/events.json
+          git add state/ docs/feed.ics docs/events.json docs/career.ics docs/career.json
           if git diff --staged --quiet; then
             echo "committed=false" >> "$GITHUB_OUTPUT"
           else
