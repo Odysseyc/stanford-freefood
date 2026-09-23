@@ -1,0 +1,26 @@
+{
+ "schema": 1,
+ "name": "Stanford Career & Recruiting",
+ "timezone": "America/Los_Angeles",
+ "generated": "2026-09-23T22:23:32+00:00",
+ "count": 1,
+ "events": [
+  {
+   "uid": "0073d53caf45db63d76e8eccbad9c7a451e793f5",
+   "title": "Tesla on campus: talk, networking & recruiting",
+   "category": "Recruiting",
+   "company": "Tesla",
+   "audience": "",
+   "blurb": "Tesla talk plus networking and recruiting. Check Handshake for the room and RSVP, and bring resumes.",
+   "org": "Tesla",
+   "location": "",
+   "start": "2026-10-05T17:00:00-07:00",
+   "end": "2026-10-05T20:00:00-07:00",
+   "day": "2026-10-05",
+   "allDay": false,
+   "url": "",
+   "source": "manual",
+   "confidence": 1.0
+  }
+ ]
+}

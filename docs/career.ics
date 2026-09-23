@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//stanford-freefood//career//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALDESC:Auto-scraped recruiting, networking, industry and career even
+ ts.
+NAME:Stanford Career & Recruiting
+X-WR-CALNAME:Stanford Career & Recruiting
+REFRESH-INTERVAL;VALUE=DURATION:PT15M
+X-PUBLISHED-TTL:PT15M
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+SUMMARY:[Recruiting] Tesla on campus: talk\, networking & recruiting
+DTSTART:20261006T000000Z
+DTEND:20261006T030000Z
+DTSTAMP:20260923T222332Z
+UID:0073d53caf45db63d76e8eccbad9c7a451e793f5@stanford-career
+DESCRIPTION:Tesla talk plus networking and recruiting. Check Handshake for
+  the room and RSVP\, and bring resumes.\n\nCompany: Tesla\nHosted by: Tesl
+ a\nWhere: Location TBA - check Handshake\n\n(added manually)
+LOCATION:Location TBA - check Handshake
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:[Recruiting] Tesla on campus: talk\, networking & recruiting
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

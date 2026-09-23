@@ -2,8 +2,8 @@
  "schema": 1,
  "name": "Stanford Free Food",
  "timezone": "America/Los_Angeles",
- "generated": "2026-09-23T03:42:15+00:00",
- "count": 48,
+ "generated": "2026-09-23T22:23:32+00:00",
+ "count": 46,
  "events": [
   {
    "uid": "9344258de34207aa337f6443a7d6e4f925a2f668",
@@ -47,21 +47,6 @@
    "day": "2026-09-25",
    "allDay": false,
    "url": "https://events.stanford.edu/event/office-for-military-affiliated-communities-coffee-donuts",
-   "source": "localist",
-   "confidence": 0.95
-  },
-  {
-   "uid": "b3ca1c28d3917daf340878fa42b2d079097b5559",
-   "title": "New Spaces Open House",
-   "food": "walking tacos, paletas",
-   "blurb": "Open house for new student event space with food and music.",
-   "org": "Office of Student Engagement",
-   "location": "Suite 4",
-   "start": "2026-09-25T14:30:00-07:00",
-   "end": "2026-09-25T16:00:00-07:00",
-   "day": "2026-09-25",
-   "allDay": false,
-   "url": "https://events.stanford.edu/event/new-spaces-open-house",
    "source": "localist",
    "confidence": 0.95
   },
@@ -362,21 +347,6 @@
    "day": "2026-10-16",
    "allDay": false,
    "url": "https://events.stanford.edu/event/office-for-military-affiliated-communities-coffee-donuts",
-   "source": "localist",
-   "confidence": 0.95
-  },
-  {
-   "uid": "76d257e257dd5aa02bd2155c0ebe090f6716c075",
-   "title": "Art & Art History Reunion Open House",
-   "food": "light food and refreshments",
-   "blurb": "Reunion reception with alums, faculty, students, and staff celebrating the art department.",
-   "org": "Department of Art & Art History",
-   "location": "McMurtry Building Outdoor Atrium",
-   "start": "2026-10-16T14:00:00-07:00",
-   "end": "2026-10-16T15:30:00-07:00",
-   "day": "2026-10-16",
-   "allDay": false,
-   "url": "https://events.stanford.edu/event/art-art-history-reunion-open-house-2026",
    "source": "localist",
    "confidence": 0.95
   },
