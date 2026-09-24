@@ -2,8 +2,8 @@
  "schema": 1,
  "name": "Stanford Free Food",
  "timezone": "America/Los_Angeles",
- "generated": "2026-09-24T14:02:00+00:00",
- "count": 46,
+ "generated": "2026-09-24T18:52:17+00:00",
+ "count": 45,
  "events": [
   {
    "uid": "9344258de34207aa337f6443a7d6e4f925a2f668",
@@ -304,21 +304,6 @@
    "url": "https://events.stanford.edu/event/cas-welcome-reception",
    "source": "localist",
    "confidence": 0.92
-  },
-  {
-   "uid": "2a804e16c735484786ce6d140c7aab87a8ef1689",
-   "title": "Moustafa Bayoumi | “I can’t imagine living next to a wall”: Palestine and the Tohono O’odham Nation",
-   "food": "dinner",
-   "blurb": "Lecture on Palestine and the Tohono O'odham Nation by Professor Moustafa Bayoumi.",
-   "org": "Stanford Humanities Center",
-   "location": "Building 160, Wallenberg Hall 433A (CESTA)",
-   "start": "2026-10-14T16:30:00-07:00",
-   "end": "2026-10-14T18:00:00-07:00",
-   "day": "2026-10-14",
-   "allDay": false,
-   "url": "https://events.stanford.edu/event/moustafa-bayoumi-i-cant-imagine-living-next-to-a-wall-palestine-and-the-tohono-oodham-nation",
-   "source": "localist",
-   "confidence": 0.85
   },
   {
    "uid": "ea87674576ef0cc6ca5f8f6f9a4b9f17961fae0f",
