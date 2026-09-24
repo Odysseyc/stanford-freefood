@@ -13,7 +13,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] refreshments - DAAAS Postdoc Appreciation Day
 DTSTART:20260924T180000Z
 DTEND:20260924T210000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:9344258de34207aa337f6443a7d6e4f925a2f668@stanford-freefood
 DESCRIPTION:Postdoc appreciation event with presentations and networking.
  \n\nFood: refreshments\nHosted by: African & African American Studies\nWhe
@@ -32,7 +32,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] appetizers and drinks - Wu Tsai Neuro Fall Picnic 2026
 DTSTART:20260924T230000Z
 DTEND:20260925T010000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:054a04f12014bff1f6bfd08f30ec56d11a9df384@stanford-freefood
 DESCRIPTION:Start-of-year picnic for neuroscience community with food\, dr
  inks\, music\, and games.\n\nFood: appetizers and drinks\nHosted by: Wu Ts
@@ -52,7 +52,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] coffee and donuts - OMAC Coffee & Donuts
 DTSTART:20260925T160000Z
 DTEND:20260925T170000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:05fd0700ad792c702918dcce9a3a1e7b311ffb5a@stanford-freefood
 DESCRIPTION:Casual coffee hour for military-affiliated students to meet an
  d connect.\n\nFood: coffee and donuts\nHosted by: Office for Military-Affi
@@ -73,7 +73,7 @@ SUMMARY:[Free food] snacks - Lecturers and Academic Teaching Staff: Academ
  ic Year Kick...
 DTSTART:20260929T210000Z
 DTEND:20260929T223000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:15e093a0717c55976d03f5aeae1f061d23eb79ba@stanford-freefood
 DESCRIPTION:Academic year kick-off and community gathering for lecturers a
  nd teaching staff.\n\nFood: snacks\nHosted by: Center for Teaching and Lea
@@ -96,7 +96,7 @@ SUMMARY:[Free food] food and refreshments - Pathways to Neurosciences 2026
   Fall Social
 DTSTART:20260930T223000Z
 DTEND:20261001T003000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:8b51b002be2ae65c55e6768a2ad3b18b6fd5cdf9@stanford-freefood
 DESCRIPTION:Fall social for prospective neuroscience program applicants an
  d current members.\n\nFood: food and refreshments\nHosted by: Wu Tsai Neur
@@ -118,7 +118,7 @@ SUMMARY:[Free food] pizza and refreshments - STVP Orientation: Opportuniti
  es in Entrepreneurship
 DTSTART:20261001T000000Z
 DTEND:20261001T020000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:700fa745646b389c5f7293a0796f3b9cfb2f8ba2@stanford-freefood
 DESCRIPTION:Orientation event for Stanford's entrepreneurship center with 
  program overviews.\n\nFood: pizza and refreshments\nHosted by: STVP\, Stan
@@ -142,7 +142,7 @@ SUMMARY:[Free food] light refreshments - Ask Me Anything: A Conversation w
  ith the President and Pr...
 DTSTART:20261001T223000Z
 DTEND:20261002T000000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:9a0a1b2422be39ddfa66a69a071b39866e20294a@stanford-freefood
 DESCRIPTION:Q&A with university president and provost about graduate educa
  tion.\n\nFood: light refreshments\nHosted by: Office of the Vice Provost f
@@ -164,7 +164,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] coffee and donuts - OMAC Coffee & Donuts
 DTSTART:20261002T160000Z
 DTEND:20261002T170000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:75753dadc99ebd43bb2e8f4493c872b43beff1be@stanford-freefood
 DESCRIPTION:Casual coffee hour for military-affiliated students to meet an
  d connect.\n\nFood: coffee and donuts\nHosted by: Office for Military-Affi
@@ -185,7 +185,7 @@ SUMMARY:[Free food] lunch - AI-Native: A Lunch Talk Exploring New Practice
   Models
 DTSTART:20261005T194500Z
 DTEND:20261005T210000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:7109d3356cc7854acde6be6d82467db8b65747c8@stanford-freefood
 DESCRIPTION:Lunch talk about AI-native law firms and practice models.\n\nF
  ood: lunch\nHosted by: Deborah L. Rhode Center on the Legal Profession\nWh
@@ -207,7 +207,7 @@ SUMMARY:[Free food] boba - Learn about Consent & Communication (CoCo Works
  hop) + Fre...
 DTSTART:20261006T020000Z
 DTEND:20261006T030000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:48afc56d3883fac65e4a1ba0f26e5931499546b4@stanford-freefood
 DESCRIPTION:Workshop on consent and communication with free boba.\n\nFood:
   boba\nHosted by: Office of Substance Use Programs Education & Resources (
@@ -228,7 +228,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] treats and boba - Ethics in Society Open House
 DTSTART:20261006T213000Z
 DTEND:20261006T233000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:6b131864362805e57d85421c88996c8e79fb2caf@stanford-freefood
 DESCRIPTION:Open house for ethics center with activities and refreshments.
  \n\nFood: treats and boba\nHosted by: McCoy Family Center for Ethics in So
@@ -248,7 +248,7 @@ SUMMARY:[Free food] light refreshments - Celebrating Human and Planetary H
  ealth | How is the Stanf...
 DTSTART:20261006T223000Z
 DTEND:20261007T010000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:b0478b214d77f6801e88a7d4216beeb49da65900@stanford-freefood
 DESCRIPTION:Annual showcase on human and planetary health research across 
  Stanford.\n\nFood: light refreshments\nHosted by: Center for Human and Pla
@@ -272,7 +272,7 @@ SUMMARY:[Free food] boba\, mochi waffles\, and lunch - Building 360 Open H
  ouse
 DTSTART:20261007T183000Z
 DTEND:20261007T203000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:8f63f64946362f8a12e823b54250e3b404573bfb@stanford-freefood
 DESCRIPTION:Open house for three campus centers with faculty\, staff\, and
   student connections.\n\nFood: boba\, mochi waffles\, and lunch\nHosted by
@@ -292,7 +292,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] lunch - DAAAS Fall Faculty Research Seminar(s)
 DTSTART:20261008T190000Z
 DTEND:20261008T200000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:2ca43b6417bb6aef04753f07277475c46f999b7d@stanford-freefood
 DESCRIPTION:Faculty research seminars in African and African American Stud
  ies with speakers.\n\nFood: lunch\nHosted by: African & African American S
@@ -312,7 +312,7 @@ SUMMARY:[Free food] coffee and cookies - Takaki Komiyama - A cell-type-spe
  cific cortical circuit f...
 DTSTART:20261008T190000Z
 DTEND:20261009T190000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:9035ced907bce9cc8dcdf48ff2c56df5673f7e03@stanford-freefood
 DESCRIPTION:Neuroscience seminar on neural circuits and value representati
  ons.\n\nFood: coffee and cookies\nHosted by: Wu Tsai Neurosciences Institu
@@ -334,7 +334,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] coffee and donuts - OMAC Coffee & Donuts
 DTSTART:20261009T160000Z
 DTEND:20261009T170000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:494c9d96b25a09346e0f7854de997076808498f6@stanford-freefood
 DESCRIPTION:Casual coffee hour for military-affiliated students to meet an
  d connect.\n\nFood: coffee and donuts\nHosted by: Office for Military-Affi
@@ -355,7 +355,7 @@ SUMMARY:[Free food] boba - Art & Boba Talk with Carolyn Lazard & Jerron He
  rman | STA...
 DTSTART:20261009T190000Z
 DTEND:20261009T200000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:fdf3a9646dea2cc74fe9e927563115c6ee6ace41@stanford-freefood
 DESCRIPTION:Artist talk with Carolyn Lazard and Jerron Herman over boba.\n
  \nFood: boba\nHosted by: Cantor Arts Center\nWhere: Cantor Arts Center The
@@ -377,7 +377,7 @@ SUMMARY:[Free food] boba - Learn about Consent & Communication (CoCo Works
  hop) + Fre...
 DTSTART:20261013T020000Z
 DTEND:20261013T030000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:431fb1b0cac2f4f129fd7c20b822d51ad36cbf39@stanford-freefood
 DESCRIPTION:Workshop on consent and communication with free boba.\n\nFood:
   boba\nHosted by: Office of Substance Use Programs Education & Resources (
@@ -398,7 +398,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] dinner - Publishing in the Humanities
 DTSTART:20261014T230000Z
 DTEND:20261015T010000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:c00890def55610195f844811471743e36de20e22@stanford-freefood
 DESCRIPTION:Workshop on academic publishing in humanities and interpretive
   social sciences.\n\nFood: dinner\nHosted by: Office of the Vice Provost f
@@ -418,7 +418,7 @@ SUMMARY:[Free food] light refreshments - Center for African Studies Welcom
  e Reception
 DTSTART:20261014T233000Z
 DTEND:20261015T013000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:ccb860f4fd0e38c926794a761161dd3f4462d2db@stanford-freefood
 DESCRIPTION:Welcome reception for the Center for African Studies with netw
  orking and remarks.\n\nFood: light refreshments\nHosted by: Center for Afr
@@ -439,7 +439,7 @@ SUMMARY:[Free food] catered dinner - Canterbury Tales: Meet the Pilgrims (
  1/3)
 DTSTART:20261016T013000Z
 DTEND:20261016T030000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:ea87674576ef0cc6ca5f8f6f9a4b9f17961fae0f@stanford-freefood
 DESCRIPTION:Reading of Canterbury Tales prologue with catered dinner and b
  rainstorming session.\n\nFood: catered dinner\nHosted by: Department of En
@@ -461,7 +461,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] coffee and donuts - OMAC Coffee & Donuts
 DTSTART:20261016T160000Z
 DTEND:20261016T170000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:c0a4238243cf04cf1d998cc543424cc21f6dda08@stanford-freefood
 DESCRIPTION:Casual coffee hour for military-affiliated students to meet an
  d connect.\n\nFood: coffee and donuts\nHosted by: Office for Military-Affi
@@ -481,7 +481,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] dinner - Publishing in the Humanities
 DTSTART:20261021T230000Z
 DTEND:20261022T010000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:cac439a1d9e82ab41212c0c54fd1aa4250e5eee3@stanford-freefood
 DESCRIPTION:Workshop on academic publishing in humanities and interpretive
   social sciences.\n\nFood: dinner\nHosted by: Office of the Vice Provost f
@@ -501,7 +501,7 @@ SUMMARY:[Free food] coffee and cookies - David Anderson - Neural Coding of
   Affective Internal Stat...
 DTSTART:20261022T190000Z
 DTEND:20261023T190000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:5ed8f32bae512e6df3d6f3e7e3b75963113832a1@stanford-freefood
 DESCRIPTION:Neuroscience seminar on neural coding of emotions and innate b
  ehaviors.\n\nFood: coffee and cookies\nHosted by: Wu Tsai Neurosciences In
@@ -521,7 +521,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] coffee and donuts - OMAC Coffee & Donuts
 DTSTART:20261023T160000Z
 DTEND:20261023T170000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:02fffa56d5c9ba3cd7e093f6e26218dc76c3d3a6@stanford-freefood
 DESCRIPTION:Casual coffee hour for military-affiliated students to meet an
  d connect.\n\nFood: coffee and donuts\nHosted by: Office for Military-Affi
@@ -542,7 +542,7 @@ SUMMARY:[Free food] boba - Bring Your Own PEER (Alcohol 101 training): Bob
  a + Jellyc...
 DTSTART:20261027T020000Z
 DTEND:20261027T030000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:637e28cba1bc248ccbc449ea7c9599dde3cceeb0@stanford-freefood
 DESCRIPTION:Free alcohol education workshop with peer facilitators and raf
  fle.\n\nFood: boba\nHosted by: Office of Substance Use Programs Education 
@@ -563,7 +563,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] light refreshments - 2027 Global Health Fall Kickoff
 DTSTART:20261027T233000Z
 DTEND:20261028T010000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:52c21087a4d23d3977e582233cd439a3517464d7@stanford-freefood
 DESCRIPTION:Global health community kickoff celebration with networking an
  d updates.\n\nFood: light refreshments\nHosted by: Center for Innovation i
@@ -584,7 +584,7 @@ SUMMARY:[Free food] coffee\, tea\, and snacks - Rock Painting at Branner L
  ibrary
 DTSTART:20261028T170000Z
 DTEND:20261028T210000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:338bf0dca79d31e54f649477ea24ef57e35f7f47@stanford-freefood
 DESCRIPTION:Halloween-themed rock painting and de-stress event at Branner 
  Library.\n\nFood: coffee\, tea\, and snacks\nHosted by: Branner Earth Scie
@@ -605,7 +605,7 @@ SUMMARY:[Free food] dinner - Leadership Bootcamp: Communication\, Negotiat
  ion and Influ...
 DTSTART:20261028T230000Z
 DTEND:20261029T023000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:bf4658f355b849e52dfc71e92e4b62de9742ee33@stanford-freefood
 DESCRIPTION:Interactive workshop on leadership communication\, negotiation
  \, and influence skills.\n\nFood: dinner\nHosted by: Office of the Vice Pr
@@ -627,7 +627,7 @@ SUMMARY:[Free food] coffee and cookies - Emily Jacobs - New frontiers in w
  omen's brain health
 DTSTART:20261029T190000Z
 DTEND:20261030T190000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:3bb51806344d8c364be9e129f691fa61cfb38b6e@stanford-freefood
 DESCRIPTION:Neuroscience seminar on women's brain health and hormonal neur
  omodulation.\n\nFood: coffee and cookies\nHosted by: Wu Tsai Neurosciences
@@ -649,7 +649,7 @@ SUMMARY:[Free food] dinner - Leadership Bootcamp: Communication\, Negotiat
  ion and Influ...
 DTSTART:20261029T230000Z
 DTEND:20261030T023000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:37c9635bc2fd8d3a3a846f0393153db763bd50b9@stanford-freefood
 DESCRIPTION:Interactive workshop on leadership communication\, negotiation
  \, and influence skills.\n\nFood: dinner\nHosted by: Office of the Vice Pr
@@ -671,7 +671,7 @@ SUMMARY:[Free food] light refreshments - InterPlay Salon with Austin Ander
  son\, Jussi Ängeslevä\, an...
 DTSTART:20261030T000000Z
 DTEND:20261030T013000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:349686c49fcde3a8d562fd2fc9b42ed3bca8c030@stanford-freefood
 DESCRIPTION:Interdisciplinary salon featuring presentations and interactiv
  e experiences from three speakers.\n\nFood: light refreshments\nHosted by:
@@ -691,7 +691,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] coffee and donuts - OMAC Coffee & Donuts
 DTSTART:20261030T160000Z
 DTEND:20261030T170000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:8bd58eb9738971dd25cf97c3590e15e54c2e68ff@stanford-freefood
 DESCRIPTION:Casual coffee hour for military-affiliated students to meet an
  d connect.\n\nFood: coffee and donuts\nHosted by: Office for Military-Affi
@@ -711,7 +711,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] boba - Upstander Workshop with PEERs: FREE boba!
 DTSTART:20261103T030000Z
 DTEND:20261103T040000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:b6bee12d944a47eeb832d8e20f3f52f954b9db9a@stanford-freefood
 DESCRIPTION:Upstander training workshop on creating a culture of consent.
  \n\nFood: boba\nHosted by: Office of Substance Use Programs Education & Re
@@ -732,7 +732,7 @@ SUMMARY:[Free food] refreshments - 3 Minute Thesis (3MT) Informational Wor
  kshop - Nov. 4\, 2026
 DTSTART:20261104T200000Z
 DTEND:20261104T210000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:3f27e0df21d7a96fbf165dfdf0230cd213ef9877@stanford-freefood
 DESCRIPTION:Workshop on presenting graduate research in three minutes.\n\n
  Food: refreshments\nHosted by: Office of the Vice Provost for Graduate Edu
@@ -755,7 +755,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] coffee and cookies - Cristopher Niell
 DTSTART:20261105T200000Z
 DTEND:20261106T200000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:0b57e030bbdb18cf9f6cac4515b3b8ed07390ddd@stanford-freefood
 DESCRIPTION:Neuroscience seminar with speaker Cristopher Niell from Univer
  sity of Oregon.\n\nFood: coffee and cookies\nHosted by: Wu Tsai Neuroscien
@@ -775,7 +775,7 @@ SUMMARY:[Free food] hors d'oeuvres and refreshments - 36th Annual Jonathan
   J. King Lecture: Dr. Bryant Lin & Dr...
 DTSTART:20261106T013000Z
 DTEND:20261106T023000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:647dff6aea2ad7c5e4d90d73bc28f61a410af03a@stanford-freefood
 DESCRIPTION:Lecture featuring Dr. Bryant Lin discussing living with termin
  al cancer.\n\nFood: hors d'oeuvres and refreshments\nHosted by: The Laurie
@@ -796,7 +796,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] coffee and donuts - OMAC Coffee & Donuts
 DTSTART:20261106T170000Z
 DTEND:20261106T180000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:6e8295b0bbf59a92008d8ccbd0c84e8d5a6ab882@stanford-freefood
 DESCRIPTION:Casual coffee hour for military-affiliated students to meet an
  d connect.\n\nFood: coffee and donuts\nHosted by: Office for Military-Affi
@@ -813,33 +813,10 @@ TRIGGER:-PT45M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[Free food] lunch - For the Next Generation: Mental Health in Asia
- n American\,...
-DTSTART:20261109T200000Z
-DTEND:20261109T213000Z
-DTSTAMP:20260924T185217Z
-UID:d9d9ab24d9e7a17c7575615e2501d7dd73a6e0d3@stanford-freefood
-DESCRIPTION:Book launch panel discussion on mental health in Asian America
- n and Pacific Islander youth.\n\nFood: lunch\nHosted by: Asian American Re
- search Center at Stanford\nWhere: Building 360 CCSRE Conference Room (Firs
- t Floor)\nDetails: https://events.stanford.edu/event/for-the-next-generati
- on-mental-health-in-asian-american-native-hawaiian-and-pacific-islander-yo
- uth\n\n(auto-added - source: localist\, confidence 0.95)
-LOCATION:Building 360 CCSRE Conference Room (First Floor)
-URL:https://events.stanford.edu/event/for-the-next-generation-mental-healt
- h-in-asian-american-native-hawaiian-and-pacific-islander-youth
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:[Free food] lunch - For the Next Generation: Mental Health in 
- Asian American\,...
-TRIGGER:-PT45M
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[Free food] tea and cookies - Lunchtime Recitals & Communi-Tea
 DTSTART:20261111T201500Z
 DTEND:20261111T211500Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:c73a118b235f4b6162baa46f9e4bf5afa0cf234e@stanford-freefood
 DESCRIPTION:Organ recital with tea and cookies afterward in Memorial Churc
  h.\n\nFood: tea and cookies\nHosted by: Office for Religious & Spiritual L
@@ -859,7 +836,7 @@ SUMMARY:[Free food] refreshments - BOOK LAUNCH: Literature and Emergency L
  aw in Kashmir and...
 DTSTART:20261112T013000Z
 DTEND:20261112T023000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:bb08fedc06a1040af44c8d0bc4579705b1a7a8d7@stanford-freefood
 DESCRIPTION:Book launch celebrating a new study of emergency law and liter
  ature.\n\nFood: refreshments\nHosted by: African & African American Studie
@@ -880,7 +857,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] lunch - DAAAS Fall Faculty Research Seminar(s)
 DTSTART:20261112T200000Z
 DTEND:20261112T210000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:3652a3f495f1d05044ac37d9d3117d6130f65794@stanford-freefood
 DESCRIPTION:Faculty research seminars in African and African American Stud
  ies with speakers.\n\nFood: lunch\nHosted by: African & African American S
@@ -900,7 +877,7 @@ SUMMARY:[Free food] appetizers and drinks - Eitner Lecture with M. D. Ushe
  r\, "Journey to the West: Bu...
 DTSTART:20261113T013000Z
 DTEND:20261113T033000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:32d5d142ff31de2c678149a2447aee71a94768ba@stanford-freefood
 DESCRIPTION:Lecture on Buddhists in ancient Alexandria with reception.\n\n
  Food: appetizers and drinks\nHosted by: Department of Classics\nWhere: Bui
@@ -921,7 +898,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] coffee and donuts - OMAC Coffee & Donuts
 DTSTART:20261113T170000Z
 DTEND:20261113T180000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:f5ad4542f1b1fc3b830eddcfc1d5cb5513ebdc72@stanford-freefood
 DESCRIPTION:Casual coffee hour for military-affiliated students to meet an
  d connect.\n\nFood: coffee and donuts\nHosted by: Office for Military-Affi
@@ -941,7 +918,7 @@ BEGIN:VEVENT
 SUMMARY:[Free food] coffee and donuts - OMAC Coffee & Donuts
 DTSTART:20261120T170000Z
 DTEND:20261120T180000Z
-DTSTAMP:20260924T185217Z
+DTSTAMP:20260924T234727Z
 UID:fd9edae9d8b73f1f3a8693da7d38b2da9a728f19@stanford-freefood
 DESCRIPTION:Casual coffee hour for military-affiliated students to meet an
  d connect.\n\nFood: coffee and donuts\nHosted by: Office for Military-Affi

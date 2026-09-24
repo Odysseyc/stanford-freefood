@@ -2,8 +2,8 @@
  "schema": 1,
  "name": "Stanford Free Food",
  "timezone": "America/Los_Angeles",
- "generated": "2026-09-24T18:52:17+00:00",
- "count": 45,
+ "generated": "2026-09-24T23:47:27+00:00",
+ "count": 44,
  "events": [
   {
    "uid": "9344258de34207aa337f6443a7d6e4f925a2f668",
@@ -572,21 +572,6 @@
    "day": "2026-11-06",
    "allDay": false,
    "url": "https://events.stanford.edu/event/office-for-military-affiliated-communities-coffee-donuts",
-   "source": "localist",
-   "confidence": 0.95
-  },
-  {
-   "uid": "d9d9ab24d9e7a17c7575615e2501d7dd73a6e0d3",
-   "title": "For the Next Generation: Mental Health in Asian American, Native Hawaiian, and Pacific Islander Youth",
-   "food": "lunch",
-   "blurb": "Book launch panel discussion on mental health in Asian American and Pacific Islander youth.",
-   "org": "Asian American Research Center at Stanford",
-   "location": "Building 360 CCSRE Conference Room (First Floor)",
-   "start": "2026-11-09T12:00:00-08:00",
-   "end": "2026-11-09T13:30:00-08:00",
-   "day": "2026-11-09",
-   "allDay": false,
-   "url": "https://events.stanford.edu/event/for-the-next-generation-mental-health-in-asian-american-native-hawaiian-and-pacific-islander-youth",
    "source": "localist",
    "confidence": 0.95
   },
