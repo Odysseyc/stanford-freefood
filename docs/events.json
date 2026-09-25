@@ -2,24 +2,9 @@
  "schema": 1,
  "name": "Stanford Free Food",
  "timezone": "America/Los_Angeles",
- "generated": "2026-09-25T19:09:58+00:00",
- "count": 42,
+ "generated": "2026-09-25T23:50:01+00:00",
+ "count": 41,
  "events": [
-  {
-   "uid": "05fd0700ad792c702918dcce9a3a1e7b311ffb5a",
-   "title": "OMAC Coffee & Donuts",
-   "food": "coffee and donuts",
-   "blurb": "Casual coffee hour for military-affiliated students to meet and connect.",
-   "org": "Office for Military-Affiliated Communities",
-   "location": "Old Union 2nd Floor",
-   "start": "2026-09-25T09:00:00-07:00",
-   "end": "2026-09-25T10:00:00-07:00",
-   "day": "2026-09-25",
-   "allDay": false,
-   "url": "https://events.stanford.edu/event/office-for-military-affiliated-communities-coffee-donuts",
-   "source": "localist",
-   "confidence": 0.95
-  },
   {
    "uid": "15e093a0717c55976d03f5aeae1f061d23eb79ba",
    "title": "Lecturers and Academic Teaching Staff: Academic Year Kick-off and Community Gathering",
