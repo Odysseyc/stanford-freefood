@@ -2,24 +2,9 @@
  "schema": 1,
  "name": "Stanford Free Food",
  "timezone": "America/Los_Angeles",
- "generated": "2026-09-25T02:49:14+00:00",
- "count": 43,
+ "generated": "2026-09-25T08:29:14+00:00",
+ "count": 42,
  "events": [
-  {
-   "uid": "054a04f12014bff1f6bfd08f30ec56d11a9df384",
-   "title": "Wu Tsai Neuro Fall Picnic 2026",
-   "food": "appetizers and drinks",
-   "blurb": "Start-of-year picnic for neuroscience community with food, drinks, music, and games.",
-   "org": "Wu Tsai Neurosciences Institute",
-   "location": "ChEM-H/Neurosciences Building Courtyard",
-   "start": "2026-09-24T16:00:00-07:00",
-   "end": "2026-09-24T18:00:00-07:00",
-   "day": "2026-09-24",
-   "allDay": false,
-   "url": "https://events.stanford.edu/event/wu-tsai-neuro-fall-picnic-2026",
-   "source": "localist",
-   "confidence": 0.95
-  },
   {
    "uid": "05fd0700ad792c702918dcce9a3a1e7b311ffb5a",
    "title": "OMAC Coffee & Donuts",
