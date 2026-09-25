@@ -2,24 +2,9 @@
  "schema": 1,
  "name": "Stanford Free Food",
  "timezone": "America/Los_Angeles",
- "generated": "2026-09-24T23:47:27+00:00",
- "count": 44,
+ "generated": "2026-09-25T02:49:14+00:00",
+ "count": 43,
  "events": [
-  {
-   "uid": "9344258de34207aa337f6443a7d6e4f925a2f668",
-   "title": "DAAAS Postdoc Appreciation Day",
-   "food": "refreshments",
-   "blurb": "Postdoc appreciation event with presentations and networking.",
-   "org": "African & African American Studies",
-   "location": "Building 80 Auditorium",
-   "start": "2026-09-24T11:00:00-07:00",
-   "end": "2026-09-24T14:00:00-07:00",
-   "day": "2026-09-24",
-   "allDay": false,
-   "url": "https://events.stanford.edu/event/daaas-postdoc-appreciation-day-7597",
-   "source": "localist",
-   "confidence": 0.95
-  },
   {
    "uid": "054a04f12014bff1f6bfd08f30ec56d11a9df384",
    "title": "Wu Tsai Neuro Fall Picnic 2026",
