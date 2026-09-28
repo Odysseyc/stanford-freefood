@@ -2,8 +2,8 @@
  "schema": 1,
  "name": "Stanford Free Food",
  "timezone": "America/Los_Angeles",
- "generated": "2026-09-28T02:54:08+00:00",
- "count": 41,
+ "generated": "2026-09-28T09:17:47+00:00",
+ "count": 42,
  "events": [
   {
    "uid": "15e093a0717c55976d03f5aeae1f061d23eb79ba",
@@ -619,6 +619,21 @@
    "url": "https://events.stanford.edu/event/office-for-military-affiliated-communities-coffee-donuts",
    "source": "localist",
    "confidence": 0.95
+  },
+  {
+   "uid": "3bc7f7110f8b3f2d346ff57ba473295b90f8629a",
+   "title": "Bring Your Own PEER (Alcohol 101 training): Boba + Jellycat Raffle!",
+   "food": "boba",
+   "blurb": "Free alcohol education workshop with peer facilitators and raffle.",
+   "org": "Office of Substance Use Programs Education & Resources (SUPER)",
+   "location": "The Well House Lobby",
+   "start": "2026-11-26T19:00:00-08:00",
+   "end": "2026-11-26T20:00:00-08:00",
+   "day": "2026-11-26",
+   "allDay": false,
+   "url": "https://events.stanford.edu/event/bring-your-own-peer-alcohol-101-training-boba-jellycat-raffle",
+   "source": "localist",
+   "confidence": 0.9
   }
  ]
 }
