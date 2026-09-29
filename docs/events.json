@@ -2,8 +2,8 @@
  "schema": 1,
  "name": "Stanford Free Food",
  "timezone": "America/Los_Angeles",
- "generated": "2026-09-29T00:51:33+00:00",
- "count": 42,
+ "generated": "2026-09-29T09:25:40+00:00",
+ "count": 43,
  "events": [
   {
    "uid": "15e093a0717c55976d03f5aeae1f061d23eb79ba",
@@ -634,6 +634,21 @@
    "url": "https://events.stanford.edu/event/bring-your-own-peer-alcohol-101-training-boba-jellycat-raffle",
    "source": "localist",
    "confidence": 0.9
+  },
+  {
+   "uid": "a7bd46cd14840f051929c5f24b89c1a553d8797c",
+   "title": "OMAC Coffee & Donuts",
+   "food": "coffee and donuts",
+   "blurb": "Casual coffee hour for military-affiliated students to meet and connect.",
+   "org": "Office for Military-Affiliated Communities",
+   "location": "Old Union 2nd Floor",
+   "start": "2026-11-27T09:00:00-08:00",
+   "end": "2026-11-27T10:00:00-08:00",
+   "day": "2026-11-27",
+   "allDay": false,
+   "url": "https://events.stanford.edu/event/office-for-military-affiliated-communities-coffee-donuts",
+   "source": "localist",
+   "confidence": 0.95
   }
  ]
 }
