@@ -2,24 +2,9 @@
  "schema": 1,
  "name": "Stanford Free Food",
  "timezone": "America/Los_Angeles",
- "generated": "2026-09-29T21:48:09+00:00",
- "count": 43,
+ "generated": "2026-09-30T03:19:34+00:00",
+ "count": 42,
  "events": [
-  {
-   "uid": "15e093a0717c55976d03f5aeae1f061d23eb79ba",
-   "title": "Lecturers and Academic Teaching Staff: Academic Year Kick-off and Community Gathering",
-   "food": "snacks",
-   "blurb": "Academic year kick-off and community gathering for lecturers and teaching staff.",
-   "org": "Center for Teaching and Learning",
-   "location": "Center for Teaching and Learning CTL Meeting Space (116)",
-   "start": "2026-09-29T14:00:00-07:00",
-   "end": "2026-09-29T15:30:00-07:00",
-   "day": "2026-09-29",
-   "allDay": false,
-   "url": "https://events.stanford.edu/event/lecturers-and-academic-teaching-staff-academic-year-kick-off-and-community-gathering",
-   "source": "localist",
-   "confidence": 0.95
-  },
   {
    "uid": "8b51b002be2ae65c55e6768a2ad3b18b6fd5cdf9",
    "title": "Pathways to Neurosciences 2026 Fall Social",
